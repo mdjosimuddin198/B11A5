@@ -29,15 +29,21 @@
                 class="flex items-center bg-[rgba(55,82,253,0.1)] p-3 mx-4 rounded-3xl"
               >
                 <img src="./assets/checkbox.png" alt="" />
-                <h2 class="text-3xl font-bold ml-2">23</h2>
+                <h2 id="nav-digit" class="text-3xl font-bold ml-2">22</h2>
               </div>
               <div>
-                <img src="./assets/theme-btn.png" alt="" />
+                <img
+                  id="bg-color"
+                  class="hover:cursor-pointer"
+                  src="./assets/theme-btn.png"
+                  alt=""
+                />
               </div>
             </li>
           </ul>
         </nav>
       </div>
+
       <div class="rounded-xl p-5 col-span-3 bg-white">
         <div class="flex justify-evenly p-4 gap-5">
           <div
@@ -48,7 +54,7 @@
             </div>
             <div>
               <p>Task Assigned</p>
-              <h2 class="text-3xl font-bold">06</h2>
+              <h2 id="task-assigned" class="text-3xl font-bold">6</h2>
             </div>
           </div>
           <div
@@ -64,8 +70,8 @@
               <img src="./assets/calender.png" alt="" />
             </div>
             <div>
-              <p>Day</p>
-              <h2 class="text-3xl font-bold">time here</h2>
+              <p id="day"></p>
+              <h2 id="time" class="text-xl font-bold"></h2>
             </div>
           </div>
         </div>
@@ -86,9 +92,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -107,9 +115,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -128,9 +138,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -150,9 +162,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -173,9 +187,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -196,9 +212,11 @@
             <div class="flex justify-around items-center">
               <div>
                 <p>Deadline</p>
-                <h2 class="text-xl font-bold">date here</h2>
+                <h2 class="deadline text-xl font-bold">date here</h2>
               </div>
-              <button class="px-4 py-2 bg-[#3752FD] rounded-lg">
+              <button
+                class="complete-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -210,22 +228,16 @@
           <img src="./assets/activity.png" alt="" />
           <h2 class="text-xl ml-3">Activity Log</h2>
         </div>
-        <button class="px-4 py-2 block mx-auto bg-[#3752FD] rounded-lg">
+        <button
+          id="clear-btn"
+          class="px-4 py-2 block mx-auto bg-[#3752FD] rounded-lg"
+        >
           Clear History
         </button>
-        <ul class="space-y-2 mt-4">
-          <li>
-            <p class="text-gray-400 rounded-md p-2 bg-[rgba(55,82,253,0.1)]">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
-            </p>
-          </li>
-          <li>
-            <p class="text-gray-400 rounded-md p-2 bg-[rgba(55,82,253,0.1)]">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
-            </p>
-          </li>
-        </ul>
+        <ul id="activity-log-innerText" class="space-y-2 mt-4"></ul>
       </div>
     </section>
+    <script src="./javaScript/utilise.js"></script>
+    <script src="./javaScript/script.js"></script>
   </body>
 </html>
