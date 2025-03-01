@@ -13,6 +13,11 @@ themeBtn.addEventListener("click", function () {
   const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
   body.style.backgroundColor = randomColor;
 });
+
+let blog = document.getElementById("blogbtn");
+blog.addEventListener("click", () => {
+  window.open("./blog.html");
+});
 // click events
 const months = [
   "January",
@@ -52,17 +57,18 @@ document.getElementById("time").innerText = `${monthname} ${date} ${year}`;
 document.getElementById("day").innerText = day;
 
 // commplete btn click
-completeBtns.forEach((btn, index) => {
+completeBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     navDigit++;
     taskAssigned--;
+    let taskAssignedValue = document.getElementById("task-assigned");
     document.getElementById("nav-digit").innerText = navDigit;
-    document.getElementById("task-assigned").innerText = taskAssigned;
+    taskAssignedValue.innerText = taskAssigned;
     alert("Board Updated Succefully");
     btn.disabled = true;
     btn.classList.add("bg-[#dbe4ff]");
-    if (index === completeBtns.length - 1) {
+    if (taskAssigned == 0) {
       alert("Congratulations You have completed all the current tasks");
     }
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our learning blog</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[rgba(55,82,253,0.1)] max-w-6xl mx-auto">
+    <header>
+      <div class="rounded-xl col-span-4 p-3 shadow-lg bg-white">
+        <nav>
+          <ul class="flex items-center justify-between">
+            <li class="flex items-center">
+              <img src="./assets/logo.png" alt="" />
+              <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
+            </li>
+            <li>
+              <button
+                class="back-btn text-white px-4 py-2 bg-[#3752FD] rounded-lg"
+              >
+                Back To Desk
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h2 class="text-center text-3xl font-bold mt-5">Blogs</h2>
+      <section class="space-y-4 mt-4">
+        <div class="bg-white p-3 rounded-md">
+          <h2 class="font-semibold text-2xl">
+            What are the different ways to select an element in the DOM?
+          </h2>
+          <hr class="border-t-2 border-dotted border-gray-00 my-4" />
+          <p class="text-gray-500 text-xl">
+            The Three(6) different way to select an element in the dom . 1.
+            getElemntbyId 2.getElementsByClassName 3. getElementsByTagName 4.
+            querySelector 5. querySelectorAll 6. getElementsByName
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-md">
+          <h2 class="font-semibold text-2xl">
+            What is the difference between innerHTML, innerText, and textContent
+            ?
+          </h2>
+          <hr class="border-t-2 border-dotted border-gray-00 my-4" />
+          <p class="text-gray-500 text-xl">
+            <span class="font-semibold">innerHTML:-</span> Gets or sets HTML
+            content inside an element without comment text
+            <span class="font-semibold">innerText:-</span> Gets or sets display
+            text without comment text
+            <span class="font-semibold">textContent:-</span>Gets or sets all
+            text content with comment text.
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-md">
+          <h2 class="font-semibold text-2xl">
+            What is event delegation in the DOM?
+          </h2>
+          <hr class="border-t-2 border-dotted border-gray-00 my-4" />
+          <p class="text-gray-500 text-xl">
+            Event delegation is a system in JavaScript where instead of
+            attaching event listeners directly to each individual element.
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-md">
+          <h2 class="font-semibold text-2xl">
+            What is event bubbling in the DOM?
+          </h2>
+          <hr class="border-t-2 border-dotted border-gray-00 my-4" />
+          <p class="text-gray-500 text-xl">
+            Event bubbling is a system in the DOM where an event triggered on a
+            specific element propagates upward through its ancestor elements in
+            the hierarchy
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-md">
+          <h2 class="font-semibold text-2xl">
+            How do you create, add, and remove elements using JavaScript?
+          </h2>
+          <hr class="border-t-2 border-dotted border-gray-00 my-4" />
+          <p class="text-gray-500 text-xl">
+            Create an Element: document.createElement Add the Element:
+            appendChild, insertBefore Remove the Element: removeChild, remove
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      const backBtn = document.querySelector(".back-btn");
+      backBtn.addEventListener("click", () => {
+        window.open("./index.html");
+      });
+    </script>
+  </body>
+</html>
