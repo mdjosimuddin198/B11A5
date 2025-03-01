@@ -16,7 +16,7 @@ themeBtn.addEventListener("click", function () {
 
 let blog = document.getElementById("blogbtn");
 blog.addEventListener("click", () => {
-  window.open("./blog.html");
+  window.location.href = "./blog.html";
 });
 // click events
 const months = [
